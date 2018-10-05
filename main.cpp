@@ -91,21 +91,21 @@ void Tictactoe::start(_SCORE &s) {
 
 string Tictactoe::evaluate() {
 	if (board[0][0]==board[0][1] && board[0][1]==board[0][2])
-		return board[0][0];
+		return board[0][0];		//1st row
 	else if (board[1][0]==board[1][1] && board[1][1]==board[1][2])
-		return board[1][0];
+		return board[1][0];		//2nd row
 	else if (board[2][0]==board[2][1] && board[2][1]==board[2][2])
-		return board[2][0];
+		return board[2][0];		//3rd row
 	else if (board[0][0]==board[1][0] && board[1][0]==board[2][0])
-		return board[0][0];
+		return board[0][0];		//1st col
 	else if (board[0][1]==board[1][1] && board[1][1]==board[2][1])
-		return board[0][1];
-	else if (board[0][3]==board[1][3] && board[1][3]==board[2][3])
-		return board[0][3];
+		return board[0][1];		//2nd col
+	else if (board[0][2]==board[1][2] && board[1][2]==board[2][2])
+		return board[0][2];		//3rd col
 	else if (board[0][0]==board[1][1] && board[1][1]==board[2][2])
-		return board[0][0];
+		return board[0][0];		//1st diag
 	else if	(board[0][2]==board[1][1] && board[1][1]==board[2][0])
-		return board[0][2];
+		return board[0][2];		//2nd diag
 	else 
 		return "-1";	
 }

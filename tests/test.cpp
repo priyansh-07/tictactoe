@@ -2,13 +2,22 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-	unordered_map<string,size_t> m{ptup("Priyansh Jain",100),ptup("Shivangi Varshney",0)};
-	_SCORE s(m);
-	auto s_ka_score_map=s.get();
-	_SCORE s1(s_ka_score_map);
-	s.printScoreCard();
-	auto winner=s.winner();
-	if(!s.tie())
-	cout<<winner.first<<endl;
+	string name1,name2;
+	cout<<"Enter the name of first player: ";
+	getline(cin,name1);
+	cout<<"Enter the name of second player: ";
+	getline(cin,name2);
+	_GAMEPLAY game(name1,name2);
+	game.start();
+	game.print();
+	short x=0,y=0;
+	while (!game.end()){
+		cout<<"Enter coordinates for "<<game.which()<<"'s turn: ";
+		cin>>x>>y;
+		game.move(coords(x-1,y-1));
+		game.print();
+	}
+	game.scoreCard();
+	cout<<game.winner()<<endl;
 	return 0;
 }

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/prakhar/Desktop/Prakhar/Git Clone/tictactoe/lib/components.hpp
+iostream
+-
+exception
+-
+utility
+-
+unordered_map
+-
+
+/Users/prakhar/Desktop/Prakhar/Git Clone/tictactoe/main.cpp
+iostream
+-
+lib/components.hpp
+/Users/prakhar/Desktop/Prakhar/Git Clone/tictactoe/lib/components.hpp
+
+/Users/prakhar/Desktop/Prakhar/Git Clone/tictactoe/tests/test.cpp
+../lib/components.hpp
+/Users/prakhar/Desktop/Prakhar/Git Clone/tictactoe/lib/components.hpp
+typeinfo
+-
+
