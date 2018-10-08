@@ -65,11 +65,11 @@ public:
 	}
 	void printScoreCard() const
 	{
-		std::cout<<"=============================================="<<std::endl
-		<<"|\t\tPLAYER \t\t|"<<"\t\tSCORE\t\t|"<<std::endl;
+		std::cout<<"================================================="<<std::endl
+		<<"|\t PLAYER \t|"<<"\tSCORE\t\t|"<<std::endl;
 		for(auto i: scores)
-			std::cout<<"|\t"<<i.first<<"\t\t\t"<<i.second<<std::endl;
-		std::cout<<"=============================================="<<std::endl;
+			std::cout<<"|\t"<<i.first<<"\t\t  "<<i.second<<std::endl;
+		std::cout<<"================================================="<<std::endl;
 	}
 	void update(const ptup& p)
 	{
