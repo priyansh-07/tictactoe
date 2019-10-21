@@ -116,18 +116,6 @@ void Tictactoe::displayScores(_SCORE &s) {
 	s.printScoreCard();
 }
 
-
-
-void rate() {
-	int rating;
-	/*ofstream fout;
-	fout.open("ratings.txt", ios::app);
-	cout<<"On the scale of 1-10, how much would you like to rate our game? ";
-	cin>>rating;
-	fout<<rating<<endl;
-	fout.close();
-	cout<<endl<<"Thank you for your response!"<<endl;*/
-}
  
 int main() {
 	char ch='y', c='y';
